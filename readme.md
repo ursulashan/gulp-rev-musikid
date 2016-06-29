@@ -1,23 +1,17 @@
-# gulp-rev [![Build Status](https://travis-ci.org/sindresorhus/gulp-rev.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-rev)
-
-> Static asset revisioning by appending content hash to filenames  
-> `unicorn.css` → `unicorn-d41d8cd98f.css`
-
-Make sure to set the files to [never expire](http://developer.yahoo.com/performance/rules.html#expires) for this to have an effect.
+# gulp-rev-musikid [![Build Status]
 
 
 ## Install
 
 ```
-$ npm install --save-dev gulp-rev
+$ npm install --save-dev gulp-rev-musikid
 ```
-
 
 ## Usage
 
 ```js
 var gulp = require('gulp');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-musikid');
 
 gulp.task('default', function () {
 	return gulp.src('src/*.css')
@@ -85,7 +79,7 @@ The hash of each rev'd file is stored at `file.revHash`. You can use this for cu
 
 ```js
 var gulp = require('gulp');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-musikid');
 
 gulp.task('default', function () {
 	// by default, gulp would pick `assets/css` as the base,
@@ -112,7 +106,7 @@ By default, `rev-manifest.json` will be replaced as a whole. To merge with an ex
 
 ```js
 var gulp = require('gulp');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-musikid');
 
 gulp.task('default', function () {
 	// by default, gulp would pick `assets/css` as the base,
@@ -138,7 +132,7 @@ Because of the way `gulp-concat` handles file paths, you may need to set `cwd` a
 
 ```js
 var gulp = require('gulp');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-musikid');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 
@@ -161,7 +155,7 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('gulp-buffer');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-musikid');
 
 gulp.task('default', function () {
 	return browserify('src/index.js')

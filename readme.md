@@ -1,5 +1,5 @@
-# gulp-rev-musikid [![Build Status]
-
+# gulp-rev-musikid
+>Most code is copy from gulp-rev
 
 ## Install
 
